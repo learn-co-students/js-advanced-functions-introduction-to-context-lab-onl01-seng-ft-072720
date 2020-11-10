@@ -55,8 +55,6 @@ function findEmployeeByFirstName(srcArray, firstName) {
 }
 
 function calculatePayroll(array) {
-    const reducer = (total, employee) => {
-        return total + allWagesFor(employee)
-    }
+    const reducer = (total, employee) => total + allWagesFor(employee)
     return array.reduce(reducer, 0)
 }
