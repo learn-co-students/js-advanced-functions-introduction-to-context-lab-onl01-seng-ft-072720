@@ -1,6 +1,6 @@
 describe("The payroll system", function () {
   describe("populates a record from an Array", function () {
-    it("has a function called createEmployeeRecord", function () {
+    it("has a function called createEmployeeRecord", function () { 
       expect(createEmployeeRecord).to.exist
     })
 
@@ -16,7 +16,7 @@ describe("The payroll system", function () {
       })
 
       it("populates a title field from the 2th element", function () {
-        let testEmployee = createEmployeeRecord(["Gray", "Worm", "Security", 1])
+    let testEmployee = createEmployeeRecord(["Gray", "Worm", "Security", 1])
         expect(testEmployee.title).to.eq("Security")
       })
 
